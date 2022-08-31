@@ -1,16 +1,14 @@
 # flutter_fundamental_3
 
-A new Flutter project.
+## Praktikum 1: Menerapkan Gesture Detector
+![prak1](https://user-images.githubusercontent.com/64391578/187748145-e9265c06-a285-408a-9f62-f8a69fc8fb52.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Praktikum 2: Menerapkan Input Widget dan Forms
+![prak2](https://user-images.githubusercontent.com/64391578/187748184-ed171d52-38ff-47e5-9d92-73d747a6bb1b.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Praktikum 3: Menerapkan Custom Input dan FormField Widget
+![prak3](https://user-images.githubusercontent.com/64391578/187748216-0c6c7b86-778c-40ee-aeaf-548fbced5ad1.png)
