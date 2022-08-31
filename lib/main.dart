@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widget/form_widget.dart';
+import 'widget/inputFields_widget.dart';
+import 'package:flutter/foundation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,6 +32,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  final TextEditingController _controller = TextEditingController.fromValue(
+  const TextEditingValue(text: "isi angka saja"));
 
   void _incrementCounter() {
     setState(() {
@@ -57,7 +60,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   '$_counter',
                   style: Theme.of(context).textTheme.headline4,
                 ),
-              const FormContoh(),
+                Form(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      VerificationCodeFormField(controller: _controller),
+                      Builder(
+                        builder: (BuildContext subContext) => ElevatedButton(
+                          onPressed: () {
+                            final valid = Form.of(subContext)?.validate();
+                            if (kDebugMode) {
+                              print("valid: $valid");
+                            }
+                          },
+                          child: const Text("validate"),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             )),
       ),
